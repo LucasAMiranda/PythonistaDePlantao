@@ -1,0 +1,15 @@
+def server():
+    lista = {2,4,6, 10, 12}
+
+    for count in range(2, lista):
+        if (lista % count == 0):
+            print("Múltiplo de", count)
+            count += 1
+
+    if (lista == 0):
+        print("É primo")
+    else:
+        print("Tem", lista, " múltiplos acima de 2 ")
+
+
+    server(lista)
